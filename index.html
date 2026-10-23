@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Supercars Olivos: una selección curada de autos nobles, deportivos y superdeportivos." />
+    
+    <!-- Titulo e icono del sitio -->
+    <title>Supercars Olivos</title>
+    <link rel="shortcut icon" href="assets/icono.png" type="image/x-icon">
+    
+    <!-- Importación de fuentes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=National+Park:wght@200..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- Archivos CSS y JS -->
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="nav-header">
+
+            <!-- "Parte izquierda" (al hacerse responsiva se coloca en la parte superior) del nav, es decir el logo y el nombre "SUPERCARS Olivos" -->
+            <div class="supolivos-nav">
+                <img src="assets/icono.png" alt="Icono Supercars Olivos">
+                <p class="nombre-nav">
+                    <span class="super">SUPERCARS</span>
+                    <span class="olivos">Olivos</span>
+                </p>
+            </div>
+
+            <!-- "Parte derecha" (al hacerse responsiva se coloca en la parte inferior) del nav, es decir las navegaciones "Inicio", "Superdeportivos/Premium" y "Deportivos/Nobles"-->
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#premium">Superdeportivos/Premium</a>
+                    </li>
+                    <li>
+                        <a href="#nobles">Deportivos/Nobles</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Sección del hero -->
+        <section id="inicio" class="container hero">
+            <!-- Div del texto que contiene el hero -->
+            <div class="hero-superior">
+                <span class="bienvenida">Bienvenido/a a</span>
+                <h1 class="nombre-sitio">SUPER<span class="amarillo">CARS</span> OLIVOS</h1>
+                <p class="p-hero">La mayor selección de autos Premium y Deportivos de Olivos.</p>
+            </div>
+
+            <!-- Div del cartel inferior del hero -->
+            <div class="hero-base">
+                <p class="cartel">↓ Explorá los modelos ↓</p>
+            </div>
+
+        </section>
+
+        <!-- Sección de los autos Premiums -->
+        <section id="premium" class="container section-premium">
+            <h2>Superdeportivos / Premium</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4" id="cards-premium"></div>          
+        </section>
+    
+        <hr>
+    
+        <!-- Sección de los autos nobles -->
+        <section id="nobles" class="container section-nobles">
+            <h2>Deportivos / Nobles</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4" id="cards-nobles"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>Olivos, Buenos Aires</p>
+                <p>Tel: 11 1234-5678</p>
+                <p>info@supercarsolivos.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Horarios</h3>
+                <p>Lunes a Viernes: 9 a 19 hs</p>
+                <p>Sábados: 9 a 14 hs</p>
+                <p>Domingos: cerrado</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Seguinos</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="footer-copyright">© 2026 Supercars Olivos. Todos los derechos reservados.</p>
+
+    </footer>
+</body>
+</html>

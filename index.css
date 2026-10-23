@@ -1,0 +1,432 @@
+/* Declaro variables para los colores */
+:root {
+  --color-azul: #152238;
+  --color-amarillo: #f49738;
+  --color-gris: #B2B6BA;
+  --color-negro: #111418
+}
+
+body {
+    background-color: var(--color-negro);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Inicio de estilos del header */
+
+
+#inicio {
+    scroll-margin-top: 6rem; /* Hace que al presionar "inicio" en el nav, se deje un espacio arriba de la sección con el id #inicio*/
+}
+
+.nav-header {
+    background-color: var(--color-azul);
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Orbitron', sans-serif;
+    align-items: center;
+}
+
+.supolivos-nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0.6rem 0;      
+}
+
+.supolivos-nav > img {
+    width: 4.5rem;        
+}
+
+.supolivos-nav > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5rem;        
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin: 1.2rem;        
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover,
+.amarillo {
+    color: var(--color-amarillo);
+}
+
+.super {
+    font-size: 1.5rem;
+}
+
+.olivos {
+    font-size: 0.9rem;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 0.2rem solid var(--color-amarillo);
+    top: 0;
+    left: 0;
+}
+
+main {
+    margin-top: 6rem;
+}
+
+/* Segundo tamaño */
+@media (max-width: 992px) {
+    .nav-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 0.5rem 0.75rem;        
+
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .menu a {
+        margin: 0.6rem 0.8rem;   
+        font-size: 0.9rem;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    a:active {
+        color: var(--color-amarillo);
+    }
+}
+
+/* Tercer tamaño */
+@media (max-width: 576px) {
+
+    .nav-header {
+        flex-direction: column;
+    }
+
+    /* .supolivos-nav > img {
+        width: 3rem;
+    } */
+
+    .supolivos-nav > p {
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        margin: 0.3rem 0;
+        font-size: 0.9rem;
+    }
+
+}
+
+/* Fin estilos del header
+------------------------------------------------------
+Comienzo estilos del main
+
+Seccion del hero
+*/
+
+
+.container {
+    margin: 0;
+    max-width: 100%;
+}
+
+.hero {
+    background-image: url("assets/hero.jpg");
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 44rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7rem;
+}
+
+.hero-superior,
+.hero-base {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-superior {
+    margin: 0;
+    padding: 0 9rem;
+}
+
+.hero-base {
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+}
+
+.bienvenida {
+    border-left: 2px solid red ;
+    padding-left: 0.5rem;
+}
+
+.nombre-sitio {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+}
+
+.p-hero {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cartel {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--color-amarillo);
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+.hero {
+        justify-content: space-around;
+        text-align: center;
+        min-height: 32rem;
+    }
+
+    .bienvenida {
+        border: none;
+    }
+
+    .hero-superior {
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .nombre-sitio {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero {
+        min-height: 32rem;
+        background-size: cover;
+        background-position: 60% center;
+    }
+
+    .hero-superior {
+        padding: 5rem 1rem;
+    }
+
+
+    .nombre-sitio {
+        font-size: 1.8rem;
+    }
+
+    .cartel {
+        font-size: 0.85rem;
+    }
+    
+}
+
+
+/* Seccion Autos */
+
+hr {
+    margin: 0;
+}
+
+
+h2 {
+    color: var(--color-azul);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-premium,
+.section-nobles {
+    background-color: var(--color-gris);
+    scroll-margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.section-premium .row, 
+.section-nobles .row {
+    width: 100%;
+    max-width: 75rem;
+}
+
+/* Cards */
+.tarjeta-auto {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.tarjeta-auto img {
+    height: 12rem;
+    object-fit: contain; 
+    padding: 0.5rem;
+}
+
+.tarjeta-auto .card-title {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .section-premium, 
+    .section-nobles {
+        scroll-margin-top: 7rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-premium,
+    .section-nobles {
+        scroll-margin-top: 10rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .tarjeta-auto img {
+        height: 10rem;
+    }
+}
+
+
+/* Fin estilos del main 
+
+-------------------------------------------------------------
+
+Comienzo estilos del footer */
+
+.footer {
+    background-color: var(--color-negro);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 0.2rem solid var(--color-amarillo);
+}
+
+.footer-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.footer-col {
+    flex: 1 1 250px;
+}
+
+.footer-col h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-amarillo);
+    margin-bottom: 1rem;
+}
+
+.footer-col p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+@media (max-width: 576px) {
+    .footer-contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .footer-col {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .footer-col h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-col li {
+        margin-bottom: 0.25rem;
+    }
+}
+
